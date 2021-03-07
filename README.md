@@ -8,11 +8,11 @@ The user will be prompted for criteria for a custom password of their choice suc
 
 Below is a screen shot of the Generator:
 
-![The finished Password Generator](assets/images/Screenshot-Password-Generator.png)
+![The finished Password Generator](Assets/Images/Screenshot-Password-Generator.png)
 
 Below is a link to the site:
 
-
+https://codyg-2021.github.io/03-JavaScript-Password-Generator/
 
 A note from Cody:
 

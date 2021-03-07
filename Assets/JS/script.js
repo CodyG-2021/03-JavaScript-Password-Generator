@@ -17,7 +17,7 @@ function generatePassword() {
 		);
 	if (!passLength) {
 		alert("Character length is required, please try again ");
-		return;
+		generatePassword();
 	} else if (passLength < 8 || passLength > 128) {
 		alert("Please enter in a vale between 8 and 128");
 		generatePassword();
@@ -100,5 +100,6 @@ function writePassword() {
 	var passwordText = document.querySelector("#password");
 	passwordText.value = password;
 }
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
