@@ -16,7 +16,7 @@ https://codyg-2021.github.io/03-JavaScript-Password-Generator/
 
 A note from Cody:
 
-*JS is why I joined this bootcamp. I feel like its the tools I really need to lay the foundation that connects it all. This was a good challenge, but I feel the next assignment will be harder.*
+*JS is why I joined this boot-camp. I feel like its the tools I really need to lay the foundation that connects it all. This was a good challenge, but I feel the next assignment will be harder. I also realized at the end of all this making one large function is not the way to go*
 
 
 

@@ -1,4 +1,4 @@
-//Arrays for random selection. 
+//Arrays for random selection 
 //Due to numbers being a smaller array, It's been duplicated for a better chance of hitting when lower password lengths are chosen  
 var number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var specialChar = ["!", "#", "$", "%", "&", "(", ")", "*", "+", "-", ".", "/", ":", ";",
@@ -31,7 +31,7 @@ function promptUser() {
 		numbers = confirm("Would you like your password to include numbers?");
 		specChar = confirm("Would you like special characters?");
 		
-		//If no options are chosen restart the function.
+		//If no options are chosen restart the function
 		if (!lowerCase && !upperCase && !numbers && !specChar) {
 			alert("Please select at least one option.");
 			promptUser();
@@ -41,9 +41,9 @@ function promptUser() {
 	}
 };
 
-//Validate the user's options and 
+//Validate the user's options
 function validateData() {
-	//Clear the array if ran more than once. 
+	//Clear the array if ran more than once 
 	userOptions =[];
 	//If the option exists add it to the array
 	if(lowerCase){
@@ -61,9 +61,10 @@ function validateData() {
 	generatePassword();
 };
 
-//Generate a password based on those options. 
+//Generate a password based on those options 
 function generatePassword() {
-	//Using random selections from the joined arrays, join them together to make a password.   
+	//Using random selections from the joined arrays, 
+	//join the individual pieces together to make a password   
 	var passArray = [];
 	for (var i = 0; i < passLength; i++) {
 		genPass = userOptions[Math.floor(Math.random() * userOptions.length)];
@@ -73,11 +74,11 @@ function generatePassword() {
 	writePassword();
 };
 
-//Display the password to the user. 
+//Display the password to the user 
 function writePassword() {
 	var passwordText = document.querySelector("#password");
 	passwordText.value = password;
-}
+};
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", promptUser);
